@@ -1,0 +1,5 @@
+package eCommerceRegistrationSystem.dataAccess.concretes;
+
+public class HibernateUserDao {
+
+}

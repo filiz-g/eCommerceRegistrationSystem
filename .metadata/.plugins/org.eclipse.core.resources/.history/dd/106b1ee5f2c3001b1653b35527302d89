@@ -1,0 +1,11 @@
+package eCommerceRegistrationSystem.core;
+
+public class GoogleRegisterAdapter implements GoogleService {
+
+	@Override
+	public void registerToSystem(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

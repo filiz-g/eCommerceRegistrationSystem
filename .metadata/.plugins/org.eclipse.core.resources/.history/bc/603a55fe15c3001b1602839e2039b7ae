@@ -1,0 +1,22 @@
+package eCommerceRegistrationSystem.business.concretes;
+
+import java.util.List;
+
+import eCommerceRegistrationSystem.business.abstracts.UserService;
+import eCommerceRegistrationSystem.entities.concretes.User;
+
+public class UserManager implements UserService {
+
+	@Override
+	public void add(User user) {
+
+		
+	}
+
+	@Override
+	public List<User> getAll() {
+
+		return null;
+	}
+
+}

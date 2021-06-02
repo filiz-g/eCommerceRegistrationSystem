@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.entities.abstracts.Entity"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.core.GoogleService"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.business.concretes.UserManager"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.dataAccess.concretes.HibernateUserDao"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.business.abstracts.UserService"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.google.GoogleManager"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.core.GoogleRegisterAdapter"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.dataAccess.abstracts.UserDao"/>
+    <fullyQualifiedTypeName name="eCommerceRegistrationSystem.entities.concretes.User"/>
+</qualifiedTypeNameHistroy>

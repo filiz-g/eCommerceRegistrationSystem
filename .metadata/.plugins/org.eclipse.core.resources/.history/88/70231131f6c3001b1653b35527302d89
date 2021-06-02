@@ -1,0 +1,47 @@
+package eCommerceRegistrationSystem.business.concretes;
+
+import java.util.List;
+
+import eCommerceRegistrationSystem.business.abstracts.UserService;
+import eCommerceRegistrationSystem.core.GoogleService;
+import eCommerceRegistrationSystem.dataAccess.abstracts.UserDao;
+import eCommerceRegistrationSystem.entities.concretes.User;
+
+public class UserManager implements UserService {
+	
+	private UserDao userDao;
+	private GoogleService googleService;
+
+	
+	public UserManager(UserDao userDao,GoogleService googleService) {
+		super();
+		this.userDao = userDao;
+		this.googleService=googleService;
+	}
+
+	@Override
+	public void register(User user) {
+		
+		if(user.getPassword().length()<6) {
+		  System.out.println("Parola en az 6 karakterden oluþmalýdýr.");
+		}
+		this.userDao.register(user);
+		this.googleService.registerToSystem("Kullanýcý kayýt oldu:"+ user.getFirstName() + user.getLastName());
+		
+	}
+
+	@Override
+	public void login(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<User> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

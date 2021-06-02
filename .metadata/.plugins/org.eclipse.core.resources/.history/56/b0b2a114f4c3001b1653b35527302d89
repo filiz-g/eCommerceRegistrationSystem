@@ -1,0 +1,18 @@
+package eCommerceRegistrationSystem;
+
+import eCommerceRegistrationSystem.business.abstracts.UserService;
+import eCommerceRegistrationSystem.business.concretes.UserManager;
+import eCommerceRegistrationSystem.core.GoogleRegisterAdapter;
+import eCommerceRegistrationSystem.dataAccess.concretes.HibernateUserDao;
+import eCommerceRegistrationSystem.entities.concretes.User;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		User user1=new User(1,"Filiz","Gül","filizz@gmail.com","0123");
+		UserService userService=new UserManager(new HibernateUserDao(),new GoogleRegisterAdapter());
+		userService.register(user1);
+	}
+
+}

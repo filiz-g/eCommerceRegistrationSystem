@@ -1,0 +1,27 @@
+package eCommerceRegistrationSystem.dataAccess.concretes;
+
+import eCommerceRegistrationSystem.dataAccess.abstracts.UserDao;
+import eCommerceRegistrationSystem.entities.concretes.User;
+
+public class HibernateUserDao implements UserDao {
+
+	@Override
+	public void register(User user) {
+
+		System.out.println(user.getFirstName() + user.getLastName() + " isimli kullanýcý baþarýlý bir þekilde kayýt oldu.");
+	}
+
+	@Override
+	public void login(User user) {
+
+		System.out.println(user.getFirstName()+ user.getLastName()+ " isimli kullanýcý giriþ yaptý.");
+	}
+
+	@Override
+	public void confirm(User user) {
+
+		
+	}
+
+	
+	}
